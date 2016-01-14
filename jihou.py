@@ -11,8 +11,10 @@ d = datetime.datetime.today()
 
 sound = '/var/tmp/myraspi/sound/ハクション大魔王の歌.mp3'
 
-if d.hour <= 12 :
-    hour = "午前" + str(d.hour) + "時" 
+if d.hour < 12 :
+    hour = "午前" + str(d.hour) + "時"
+elif d.hour == 12 : 
+    hour = "正午" 
 else :
     hour = "午後" + str(d.hour - 12) + "時" 
 
