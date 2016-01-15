@@ -9,7 +9,7 @@ exe_yukkuri = '/opt/aquestalkpi/AquesTalkPi'
 
 d = datetime.datetime.today()
 
-sound = '/var/tmp/myraspi/sound/ハクション大魔王の歌.mp3'
+#sound = '/var/tmp/myraspi/sound/ハクション大魔王の歌.mp3'
 
 if d.hour < 12 :
     hour = "午前" + str(d.hour) + "時"
