@@ -17,7 +17,10 @@ else :
     hour = "午後" + str(d.hour - 12) + "時" 
 
 if d.minute == 0 :
-    min = 'ちょうど'
+    if d.hour == 12:
+        min = ''
+    else ;
+        min = 'ちょうど'
 elif d.minute == 30 :
     min = '半'
 else :
