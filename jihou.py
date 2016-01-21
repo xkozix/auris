@@ -19,7 +19,7 @@ else :
 if d.minute == 0 :
     if d.hour == 12:
         min = ''
-    else ;
+    else :
         min = 'ちょうど'
 elif d.minute == 30 :
     min = '半'
