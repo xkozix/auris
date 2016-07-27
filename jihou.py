@@ -1,3 +1,6 @@
+#
+# ゆっくり時報
+#
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
