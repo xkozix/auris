@@ -1,8 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 #
 # ゆっくり時報
 #
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
 
 import os,datetime,sys
 
@@ -14,10 +14,10 @@ d = datetime.datetime.today()
 
 if d.hour < 12 :
     hour = "午前" + str(d.hour) + "時"
-elif d.hour == 12 : 
-    hour = "正午" 
+elif d.hour == 12 :
+    hour = "正午"
 else :
-    hour = "午後" + str(d.hour - 12) + "時" 
+    hour = "午後" + str(d.hour - 12) + "時"
 
 if d.minute == 0 :
     if d.hour == 12:
