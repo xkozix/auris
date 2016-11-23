@@ -1,0 +1,8 @@
+- name: dev group
+  hosts: dev
+  gather_facts: no
+
+  roles:
+    - hostname
+    - selinux
+    - firewalld

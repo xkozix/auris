@@ -1,0 +1,9 @@
+- name: job group
+  hosts: job
+  gather_facts: no
+
+  roles:
+    - hostname
+    - selinux
+    - firewalld
+    - jenkins
