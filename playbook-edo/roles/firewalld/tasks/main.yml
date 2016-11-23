@@ -1,0 +1,7 @@
+- name: firewalld設定
+  firewalld:
+    port: "{{ item }}"
+    permanent: True
+    state: enabled
+  notify: restart firewalld
+  with_items: "{{ firewalld_accept_port }}"

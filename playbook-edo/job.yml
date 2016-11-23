@@ -1,0 +1,10 @@
+- name: job group
+  hosts: job
+  gather_facts: no
+
+#  tasks:
+#    - include: test.yml
+
+  roles:
+    - selinux
+    - firewalld

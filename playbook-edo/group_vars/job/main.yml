@@ -1,0 +1,3 @@
+firewalld_accept_port:
+  - 80/tcp
+  - 8080/tcp

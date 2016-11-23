@@ -1,0 +1,10 @@
+- name: dev group
+  hosts: dev
+  gather_facts: no
+
+#  tasks:
+#    - include: test.yml
+
+  roles:
+    - selinux
+    - firewalld
