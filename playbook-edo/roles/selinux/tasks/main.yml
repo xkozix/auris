@@ -1,3 +1,4 @@
 - name: SElinuxを無効化する
   selinux:
     state: disabled
+  notify: reboot server

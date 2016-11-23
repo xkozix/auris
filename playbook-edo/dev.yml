@@ -2,9 +2,7 @@
   hosts: dev
   gather_facts: no
 
-#  tasks:
-#    - include: test.yml
-
   roles:
+    - hostname
     - selinux
     - firewalld

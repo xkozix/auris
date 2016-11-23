@@ -1,7 +1,37 @@
-- name: firewalld設定
-  firewalld:
-    port: "{{ item }}"
-    permanent: True
-    state: enabled
-  notify: restart firewalld
-  with_items: "{{ firewalld_accept_port }}"
+#
+# jenkinsインストール
+#
+
+- name: install the latest version of wget
+  yum:
+    name: wget
+    state: latest
+
+- name: check repofile
+  shell: test -f /etc/yum.repos.d/jenkins.repo
+  register: result
+  ignore_errors: True
+  changed_when: False
+- name: wget repo file
+  shell: wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable/jenkins.repo
+  when: result.rc != 0
+
+- name: import rpm key
+  rpm_key:
+    state: present
+    key: http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+
+- name: install the jenkins and the java
+  yum:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - jenkins
+    - java-1.7.0-openjdk
+
+- name: jenkinsサービス設定
+  service:
+    name: jenkins
+    enabled: yes
+    state: started
+    
