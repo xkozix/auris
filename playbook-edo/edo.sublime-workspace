@@ -12,10 +12,20 @@
 	"buffers":
 	[
 		{
-			"file": "dev.yml",
+			"file": "roles/fujitest/tasks/main.yml",
 			"settings":
 			{
-				"buffer_size": 105,
+				"buffer_size": 114,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "job.yml",
+			"settings":
+			{
+				"buffer_size": 137,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -74,12 +84,19 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/kozi/auris/playbook-edo"
+		"/Users/kozi/auris/playbook-edo",
+		"/Users/kozi/auris/playbook-edo/roles",
+		"/Users/kozi/auris/playbook-edo/roles/firewalld",
+		"/Users/kozi/auris/playbook-edo/roles/fujitest",
+		"/Users/kozi/auris/playbook-edo/roles/fujitest/tasks",
+		"/Users/kozi/auris/playbook-edo/roles/hostname",
+		"/Users/kozi/auris/playbook-edo/roles/hostname/tasks"
 	],
 	"file_history":
 	[
-		"/Users/kozi/auris/playbook-edo/job.yml",
+		"/Users/kozi/auris/playbook-edo/roles/test/task/main.yml",
 		"/Users/kozi/auris/playbook-edo/roles/selinux/handlers/main.yml",
+		"/Users/kozi/auris/playbook-edo/job.yml",
 		"/Users/kozi/auris/playbook-edo/roles/selinux/tasks/main.yml",
 		"/Users/kozi/auris/playbook-edo/dev.yml",
 		"/Users/kozi/auris/playbook-edo/roles/hostname/tasks/main.yml",
@@ -117,6 +134,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"find {{ item }} -name \"test*.sh\" -exec sh {} stop \\;",
+			"`\n",
+			"(@)",
+			". ",
+			"x",
+			"aaa",
 			"reboot"
 		],
 		"highlight": true,
@@ -146,19 +169,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "dev.yml",
-					"semi_transient": true,
+					"file": "roles/fujitest/tasks/main.yml",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 105,
+						"buffer_size": 114,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								9,
+								9
 							]
 						],
 						"settings":
@@ -170,6 +193,34 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "job.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 137,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								70,
+								70
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
