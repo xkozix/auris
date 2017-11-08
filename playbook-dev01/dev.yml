@@ -1,0 +1,9 @@
+- name: dev group
+  hosts: dev
+  gather_facts: no
+  become: yes
+
+  roles:
+    - hostname
+    - pam_limits
+    #- ping
