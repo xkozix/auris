@@ -3,7 +3,8 @@
   gather_facts: no
 
   roles:
-    - hostname
-    - selinux
-    - firewalld
-    - jenkins
+    - fujitest
+  #  - hostname
+  #  - selinux
+  #  - firewalld
+  #  - jenkins

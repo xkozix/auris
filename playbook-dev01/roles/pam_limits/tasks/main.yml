@@ -1,0 +1,9 @@
+- name: modify filedescriptor
+  pam_limits:
+    domain: '*'
+    limit_type: '-'
+    limit_item: "{{ item }}"
+    value: 4096
+  with_items:
+    - nofile
+    - nproc

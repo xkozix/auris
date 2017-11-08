@@ -1,0 +1,4 @@
+- shell: find {{ item }} -name "test*.sh" -exec sh {} stop \;
+  args:
+    chdir: "{{ item }}"
+  with_items: "/opt"
