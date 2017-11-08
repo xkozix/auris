@@ -6,4 +6,5 @@
   roles:
     - hostname
     - pam_limits
+    - yum
     #- ping

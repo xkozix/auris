@@ -1,0 +1,4 @@
+- name: install packege
+  yum:
+    name: "{{ yum_list }}"
+    state: latest
