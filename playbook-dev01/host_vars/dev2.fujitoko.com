@@ -50,4 +50,14 @@ yum_list:
   - php56-tidy.x86_64
   - php56-xml.x86_64
   - php56-xmlrpc.x86_64
-
+  - postgresql8.x86_64
+  - postgresql8-contrib.x86_64
+  - postgresql8-devel.x86_64
+  - postgresql8-docs.x86_64
+  - postgresql8-libs.i686
+  - postgresql8-libs.x86_64
+  - postgresql8-plperl.x86_64
+  - postgresql8-plpython.x86_64
+  - postgresql8-pltcl.x86_64
+  - postgresql8-server.x86_64
+  - postgresql8-test.x86_64
