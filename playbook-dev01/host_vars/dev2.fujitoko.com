@@ -1,6 +1,7 @@
 yum_list:
-  - httpd24.x86_64
-  - mod24_ssl.x86_64
+#  - httpd24.x86_64
+#  - mod24_ssl.x86_64
+  - nginx.x86_64
   - php56.x86_64
   - php56-bcmath.x86_64
   - php56-cli.x86_64
