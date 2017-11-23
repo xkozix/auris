@@ -8,4 +8,5 @@
     - swap
     - pam_limits
     - yum
+    - apache
     #- ping
